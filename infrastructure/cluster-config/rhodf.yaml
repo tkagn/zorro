@@ -14,8 +14,6 @@ spec:
     automated:
       allowEmpty: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace: true
   source:
     path: infrastructure/rhodf
     repoURL: 'https://github.com/tkagn/zorro'
