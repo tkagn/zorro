@@ -7,5 +7,5 @@ commonLabels:
 resources:
   - complianceoperator.yaml
   - rhoadp.yaml
-  - rhodf.yaml
+#  - rhodf.yaml
 
