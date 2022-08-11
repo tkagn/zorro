@@ -17,4 +17,3 @@ spec:
   source:
     path: infrastructure/rhodf
     repoURL: 'https://github.com/tkagn/zorro'
-    targetRevision: Head
