@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ./group-ocp-admins.yaml
+  - ./crb-clusteradmin-ocp-admins.yaml
   - ./openshift-gitops-subscription.yaml 
   - ./openshift-gitops-cluster.yaml
   - ./project-infrastructure.yaml

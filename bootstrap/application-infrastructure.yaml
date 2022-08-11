@@ -3,15 +3,20 @@ kind: Application
 metadata:
   name: infrastructure
   namespace: openshift-gitops
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: openshift-gitops
     server: "https://kubernetes.default.svc"
   project: infrastructure
   syncPolicy:
+    syncOptions:
+    - ApplyOutOfSyncOnly=true
     automated:
       allowEmpty: true
       selfHeal: true
   source:
     path: infrastructure/cluster-config
     repoURL: 'https://github.com/tkagn/zorro'
+    targetRevision: HEAD
