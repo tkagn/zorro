@@ -6,6 +6,6 @@ commonLabels:
 
 resources:
   - complianceoperator.yaml
-#  - rhoadp.yaml
+  - rhoadp.yaml
 #  - rhodf.yaml
 
