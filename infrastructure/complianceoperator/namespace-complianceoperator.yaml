@@ -1,0 +1,7 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: openshift-compliance
+  labels:
+    kubernetes.io/metadata.name: openshift-compliance
+spec: {}
