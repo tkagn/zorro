@@ -15,5 +15,5 @@ spec:
       allowEmpty: true
       selfHeal: true
   source:
-    path: infrastructure/oadp
+    path: infrastructure/rhoadp
     repoURL: 'https://github.com/tkagn/zorro'
