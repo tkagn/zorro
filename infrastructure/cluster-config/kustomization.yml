@@ -5,6 +5,6 @@ commonLabels:
   app.kubernetes.io/part-of: infrastructure
 
 resources:
-  - rhoadp.yaml
-  - rhodf.yaml
+#  - rhoadp.yaml
+#  - rhodf.yaml
 
