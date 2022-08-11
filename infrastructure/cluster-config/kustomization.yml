@@ -5,7 +5,7 @@ commonLabels:
   app.kubernetes.io/part-of: infrastructure
 
 resources:
-#  - complianceoperator.yaml
+  - complianceoperator.yaml
 #  - rhoadp.yaml
 #  - rhodf.yaml
 
