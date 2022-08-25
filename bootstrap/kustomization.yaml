@@ -7,4 +7,4 @@ resources:
   - ./openshift-gitops-subscription.yaml 
   - ./openshift-gitops-cluster.yaml
   - ./project-infrastructure.yaml
-#  - ./application-infrastructure.yaml
+  - ./application-infrastructure.yaml
