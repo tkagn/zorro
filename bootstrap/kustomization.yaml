@@ -6,5 +6,5 @@ resources:
   - ./crb-clusteradmin-ocp-admins.yaml
   - ./openshift-gitops-subscription.yaml 
   - ./openshift-gitops-cluster.yaml
-  - ./project-infrastructure.yaml
-  - ./application-infrastructure.yaml
+#  - ./project-infrastructure.yaml
+#  - ./application-infrastructure.yaml
