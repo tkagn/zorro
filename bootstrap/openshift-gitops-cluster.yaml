@@ -60,7 +60,7 @@ spec:
     resources:
       limits:
         cpu: '2'
-        memory: 1Gi
+        memory: 500m
       requests:
         cpu: 250m
         memory: 512Mi
@@ -73,7 +73,7 @@ spec:
   repo:
     resources:
       limits:
-        cpu: '1'
+        cpu: 500m
         memory: 1Gi
       requests:
         cpu: 250m
@@ -109,10 +109,10 @@ spec:
     processors: {}
     resources:
       limits:
-        cpu: '2'
-        memory: 2Gi
+        cpu: 500m
+        memory: 1Gi
       requests:
         cpu: 250m
-        memory: 1Gi
+        memory: 512Mi
     sharding: {}
 
