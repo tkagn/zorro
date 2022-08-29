@@ -1,0 +1,17 @@
+apiVersion: oadp.openshift.io/v1alpha1
+kind: DataProtectionApplication
+metadata:
+  name: cluster-dpa
+  namespace: openshift-adp
+spec:
+  backupImages: false
+  configuration:
+    restic:
+      enable: true
+    velero:
+      defaultPlugins:
+        - openshift
+        - aws
+        - kubevirt
+        - csi
+      noDefaultBackupLocation: true
