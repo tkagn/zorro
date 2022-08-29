@@ -17,5 +17,4 @@ spec:
   source:
     path: infrastructure/rhodf
     repoURL: 'https://github.com/tkagn/zorro'
-    targetRevision: main
-    
+    targetRevision: clusterbot-20220829-1951
