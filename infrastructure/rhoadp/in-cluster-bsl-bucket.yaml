@@ -1,0 +1,11 @@
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: in-cluster-bsl
+  namespace: openshift-adp
+spec:
+  additionalConfig:
+    bucketclass: noobaa-default-bucket-class
+  bucketName: in-cluster-bsl
+  objectBucketName: obc-incluster-bsl-incluster-bsl
+  storageClassName: openshift-storage.noobaa.io
