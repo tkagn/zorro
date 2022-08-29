@@ -2,7 +2,7 @@ apiVersion: user.openshift.io/v1
 kind: Group
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "10"
   name: ocp-admins
 users:
 #  - user1
