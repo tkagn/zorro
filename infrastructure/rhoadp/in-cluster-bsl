@@ -1,0 +1,20 @@
+apiVersion: velero.io/v1
+kind: BackupStorageLocation
+metadata:
+  name: in-cluster-bsl
+  namespace: openshift-adp
+spec:
+  config:
+    insecureSkipTLSVerify: 'true'
+    profile: default
+    region: noobaa
+    s3ForcePathStyle: 'true'
+    s3Url: 'https://s3.openshift-storage.svc'
+  credential:
+    key: cloud
+    name: cloud-credentials
+  default: true
+  objectStorage:
+    bucket: in-cluster-bsl
+    prefix: in-cluster-bsl
+  provider: aws
