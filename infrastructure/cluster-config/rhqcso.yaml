@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: RHOADP
+  name: RHQCSO
   namespace: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -15,5 +15,5 @@ spec:
       allowEmpty: true
       selfHeal: true
   source:
-    path: infrastructure/rhoadp
+    path: infrastructure/rhqcso
     repoURL: 'https://github.com/tkagn/zorro'

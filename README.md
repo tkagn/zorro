@@ -3,10 +3,11 @@
 
 Random Zorro RHOCP Cluster with Kustomize manifests:
 
- - RHODF
- - RHOADP
- - RHACM
- - RHACS
+ - Red Hat OpenShift Data Foundation (RHODF)
+ - Red Hat OpenShift APIs for Data Protection (RHOADP)
+ - Red Hat Advanced Cluster Management (RHACM) 
+ - Red Hat Advanced Cluster Security (RHACS)
+ - Red Hat Quay Container Security Operator (RHQCSO)
 
 
 OpenShift GitOps (ArgoCD) SyncWaves
