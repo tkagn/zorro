@@ -14,7 +14,7 @@ spec:
             - ReadWriteOnce
           resources:
             requests:
-              storage: "512Gi"
+              storage: "2Ti"
           storageClassName: thin-csi
           volumeMode: Block
       name: ocs-deviceset
