@@ -1,25 +1,42 @@
-
 apiVersion: ocs.openshift.io/v1
 kind: StorageCluster
 metadata:
   name: ocs-storagecluster
   namespace: openshift-storage
 spec:
+  arbiter: {}
+  encryption:
+    kms: {}
   externalStorage: {}
+  managedResources:
+    cephBlockPools: {}
+    cephCluster: {}
+    cephConfig: {}
+    cephDashboard: {}
+    cephFilesystems: {}
+    cephObjectStoreUsers: {}
+    cephObjectStores: {}
+  mirroring: {}
+  nodeTopologies: {}
   storageDeviceSets:
     - config: {}
-      count: 1
+      resources: {}
+      placement: {}
+      name: ocs-deviceset-thin-csi
       dataPVCTemplate:
+        metadata: {}
         spec:
           accessModes:
             - ReadWriteOnce
           resources:
             requests:
-              storage: "2Ti"
+              storage: 2Ti
           storageClassName: thin-csi
           volumeMode: Block
-      name: ocs-deviceset
-      placement: {}
-      portable: true
+        status: {}
+      count: 1
       replica: 3
-      resources: {}
+      portable: true
+      preparePlacement: {}
+
+
