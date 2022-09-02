@@ -5,5 +5,5 @@ resources:
   - namespace-rhodf.yaml
   - operatorgroup-rhodf.yaml
   - subscription-rhodf.yaml
-  - rhocs-storagecluster.yaml
+#  - rhocs-storagecluster.yaml
 #  - rhodf-storagecluster.yaml
