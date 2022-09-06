@@ -21,4 +21,4 @@ spec:
   source:
     path: infrastructure/cluster-config
     repoURL: 'https://github.com/tkagn/zorro'
-    targetRevision: HEAD
+    targetRevision: 2022-sep-06-vsphere
