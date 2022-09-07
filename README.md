@@ -17,3 +17,6 @@ OpenShift GitOps (ArgoCD) SyncWaves
 - 30-40 Applications
 
 
+Set namespace to be managed by ArgoCD:
+
+oc label namespace <namespace> argocd.argoproj.io/managed-by=openshift-gitops
