@@ -19,4 +19,6 @@ OpenShift GitOps (ArgoCD) SyncWaves
 
 Set namespace to be managed by ArgoCD:
 
+```bash
 oc label namespace <namespace> argocd.argoproj.io/managed-by=openshift-gitops
+```
