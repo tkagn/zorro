@@ -18,6 +18,7 @@ spec:
     cephObjectStores: {}
   mirroring: {}
   nodeTopologies: {}
+  failureDomain: rack
   storageDeviceSets:
     - config: {}
       resources: {}
