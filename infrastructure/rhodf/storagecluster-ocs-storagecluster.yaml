@@ -18,7 +18,8 @@ spec:
     cephObjectStores: {}
   mirroring: {}
   nodeTopologies: {}
-  failureDomain: rack
+  failureDomainKey:
+    topology.kubernetes.io/rack
   storageDeviceSets:
     - config: {}
       resources: {}
