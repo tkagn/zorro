@@ -9,5 +9,5 @@ resources:
 #  - ./rhcomplianceoperator.yaml
 #  - ./rhqcso.yaml
 #  - ./rhoadp.yaml
-#  - ./rhodf.yaml
+   - ./rhodf.yaml
 
