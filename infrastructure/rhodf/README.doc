@@ -1,0 +1,10 @@
+
+
+Creates namespace
+Creates the operatorgroup
+Adds the subscription to the cluster
+Deploys the storage cluster
+
+*NOTE:
+====
+A minimum of three nodes must be labeled with `cluster.ocs.openshift.io/openshift-storage: ''`
