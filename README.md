@@ -8,14 +8,7 @@ Random Zorro RHOCP Cluster with Kustomize manifests:
  - Red Hat Advanced Cluster Management (RHACM) 
  - Red Hat Advanced Cluster Security (RHACS)
  - Red Hat Quay Container Security Operator (RHQCSO)
-
-
-OpenShift GitOps (ArgoCD) SyncWaves
-
-- 10-20 Bootstrap
-- 20-30 Infrastructure
-- 30-40 Applications
-
+ - Red Hat Local Storage Operator (RHLSO)
 
 Set namespace to be managed by ArgoCD:
 
