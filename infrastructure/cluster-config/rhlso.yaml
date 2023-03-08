@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rhlso
+  namespace: openshift-gitops
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: "https://kubernetes.default.svc"
+  project: infrastructure
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      selfHeal: true
+    retry:
+      limit: 5
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+      - CreateNamespace=true
+  source:
+    path: infrastructure/rhlso
+    repoURL: 'https://github.com/tkagn/zorro-private'

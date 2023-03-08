@@ -1,0 +1,24 @@
+﻿apiVersion: local.storage.openshift.io/v1alpha1
+kind: LocalVolumeSet
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
+  name: localblock-odf
+  namespace: openshift-local-storage
+spec:
+  deviceInclusionSpec:
+    deviceTypes:
+      - disk
+      - part
+    minSize: 1Mi
+  nodeSelector:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: cluster.ocs.openshift.io/openshift-storage
+            operator: In
+            values:
+              - ''
+  storageClassName: localblock-odf
+  volumeMode: Block
+  tolerations:
+    - operator: Exists

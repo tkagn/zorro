@@ -1,0 +1,25 @@
+﻿apiVersion: local.storage.openshift.io/v1
+kind: LocalVolume
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true  
+    argocd.argoproj.io/sync-wave: "5"
+  name: localblock-odf
+  namespace: openshift-local-storage
+spec:
+  logLevel: Normal
+  managementState: Managed
+  nodeSelector:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: cluster.ocs.openshift.io/openshift-storage
+            operator: In
+            values:
+              - ''
+  storageClassDevices:
+    - devicePaths:
+        - /dev/vg0/lv0
+      storageClassName: localblock-odf
+      volumeMode: Block
+  tolerations:
+    - operator: Exists
